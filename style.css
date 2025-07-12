@@ -1,0 +1,39 @@
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  color: red;
+/* Inter 폰트 적용 */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Light gray background */
+    color: #333; /* Darker text for readability */
+}
+
+/* Custom styles for icons and specific elements */
+.icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.25rem; /* Larger icon size */
+    vertical-align: middle;
+}
+
+.section-title {
+    border-bottom: 2px solid #e5e7eb; /* Light gray border for separation */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feynman-preview {
+    background-color: #fef3c7; /* Light yellow background */
+    border-left: 4px solid #fcd34d; /* Yellow left border */
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #78350f; /* Darker yellow text */
+}
+
+.activity-item {
+    margin-bottom: 1rem;
+}
+  text-align: center;
+}

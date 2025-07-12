@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>실습1실</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>👋 Hello World!</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고등학교 1학년 데이터 분석 실습 수업 지도안</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Inter 폰트 적용 */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #333; /* Darker text for readability */
+        }
+        /* Custom styles for icons and specific elements */
+        .icon {
+            display: inline-block;
+            margin-right: 0.5rem;
+            font-size: 1.25rem; /* Larger icon size */
+            vertical-align: middle;
+        }
+        .section-title {
+            border-bottom: 2px solid #e5e7eb; /* Light gray border for separation */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .feynman-preview {
+            background-color: #fef3c7; /* Light yellow background */
+            border-left: 4px solid #fcd34d; /* Yellow left border */
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #78350f; /* Darker yellow text */
+        }
+        .activity-item {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8 mb-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold text-indigo-700 mb-2">데이터 분석 실습 수업 지도안</h1>
+            <h2 class="text-2xl font-semibold text-gray-700">고등학교 1학년</h2>
+        </header>
+
+        <section class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-800 section-title mb-4">수업 개요</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                본 수업은 고등학교 1학년 학생들을 대상으로 데이터 분석의 기초 개념을 이해하고 간단한 데이터 분석을 실습하는 것을 목표로 합니다.
+                파인만 기법을 활용하여 어려운 개념도 쉽게 설명하고, 학생들이 직접 참여하며 흥미를 느낄 수 있도록 구성했습니다.
+            </p>
+        </section>
+
+        <!-- 1차시: 데이터, 그거 뭔데? -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-indigo-600 mb-4 section-title">1차시: 데이터, 그거 뭔데? (45분)</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">🚀</span> 학습 목표</h3>
+                <ul class="list-disc list-inside ml-4 text-gray-600 leading-relaxed">
+                    <li>데이터의 <strong>의미</strong>와 <strong>종류</strong>를 설명할 수 있다.</li>
+                    <li>일상생활 속에서 데이터를 <strong>찾아내고 분류</strong>할 수 있다.</li>
+                    <li>데이터가 왜 중요한지 <strong>설명</strong>할 수 있다.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">💡</span> 파인만 기법으로 미리 보기</h3>
+                <div class="feynman-preview">
+                    <p>"얘들아, 데이터가 뭘까? 음... 우리가 아침에 일어나서 저녁에 잠들 때까지 우리 주변에 있는 모든 거야. 네가 어제 저녁에 먹은 떡볶이 양, 친구랑 주고받은 카톡 메시지 수, 오늘 입은 옷 색깔, 시험 점수... 이 모든 게 다 데이터야! 엄청 많지? 이걸 잘 모아서 보면 우리가 몰랐던 재밌는 사실을 알아낼 수 있단다. 마치 탐정이 단서를 모아서 사건을 해결하는 것처럼 말이야."</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">📝</span> 수업 활동</h3>
+                <ol class="list-decimal list-inside ml-4 text-gray-600 leading-relaxed">
+                    <li class="activity-item">
+                        <strong>데이터란 무엇인가? (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>질문 던지기</strong>: "너희 주변에서 데이터가 아닌 것을 찾아볼까?" (학생들의 다양한 대답 유도)</li>
+                            <li><strong>개념 설명</strong>: 데이터의 정의 (사실, 정보, 기록 등) 및 정량적/정성적 데이터 설명. (예: 키, 몸무게 - 정량적 / 좋아하는 색, 기분 - 정성적)</li>
+                            <li><strong>생활 속 데이터 찾기</strong>: 학생들이 일상생활에서 접하는 데이터 (스마트폰 사용 시간, 급식 메뉴, 날씨, 유튜브 시청 기록 등)를 포스트잇에 적고 발표하기.</li>
+                        </ul>
+                    </li>
+                    <li class="activity-item">
+                        <strong>데이터, 왜 중요할까? (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>사례 제시</strong>: 데이터가 활용되는 실제 사례 (넷플릭스 영화 추천, 날씨 예보, 스포츠 경기 분석 등)를 보여주며 데이터의 중요성 강조.</li>
+                            <li><strong>"나만의 데이터" 분석</strong>: 자신의 데이터를 활용하여 알 수 있는 것 생각해보기 (예: 나의 스마트폰 사용 데이터를 보면 내가 어떤 앱을 가장 많이 쓰는지 알 수 있다).</li>
+                        </ul>
+                    </li>
+                    <li class="activity-item">
+                        <strong>데이터 수집 및 분류 게임 (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>활동</strong>: 모둠별로 특정 주제 (예: 우리 반 친구들의 좋아하는 과일)를 정하고, 데이터를 수집한 후 정량적/정성적으로 분류해보는 미니 게임 진행.</li>
+                            <li><strong>발표</strong>: 각 모둠에서 수집한 데이터와 분류 결과 발표 및 공유.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">🏠</span> 과제</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    일주일 동안 자신의 스마트폰 사용 시간 데이터를 기록하고, 어떤 앱을 주로 사용했는지 정리해오기. (다음 차시에 활용)
+                </p>
+            </div>
+        </section>
+
+        <!-- 2차시: 데이터, 한눈에 보이게 정리하기! -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-indigo-600 mb-4 section-title">2차시: 데이터, 한눈에 보이게 정리하기! (45분)</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">🚀</span> 학습 목표</h3>
+                <ul class="list-disc list-inside ml-4 text-gray-600 leading-relaxed">
+                    <li>데이터를 <strong>표</strong> 형태로 정리할 수 있다.</li>
+                    <li>데이터를 <strong>시각화</strong>하는 기본적인 방법을 이해하고 적용할 수 있다.</li>
+                    <li>시각화된 데이터에서 <strong>의미</strong>를 찾아낼 수 있다.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">💡</span> 파인만 기법으로 미리 보기</h3>
+                <div class="feynman-preview">
+                    <p>"자, 이제 우리가 어제 모았던 엉망진창 데이터들을 깔끔하게 정리해볼 거야! 마치 지저분한 방을 청소해서 어디에 뭐가 있는지 한눈에 알 수 있게 하는 것처럼 말이야. 그리고 이걸 그림으로 예쁘게 그리면 훨씬 더 쉽게 볼 수 있어. 마치 복잡한 지도 대신에 예쁜 그림책을 보는 것처럼 말이지! 우리가 그림을 잘 그리면 데이터를 통해서 이야기를 들려줄 수도 있어."</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">📝</span> 수업 활동</h3>
+                <ol class="list-decimal list-inside ml-4 text-gray-600 leading-relaxed">
+                    <li class="activity-item">
+                        <strong>데이터 표로 만들기 (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>복습</strong>: 지난 시간 과제(스마트폰 사용 시간 데이터) 발표 및 공유.</li>
+                            <li><strong>엑셀/구글 스프레드시트 소개</strong>: 간단한 엑셀(또는 구글 스프레드시트) 기본 사용법 (셀 선택, 값 입력, 간단한 수식) 설명.</li>
+                            <li><strong>실습</strong>: 자신의 스마트폰 사용 시간 데이터를 엑셀/구글 스프레드시트에 표 형태로 직접 입력하고 정리하기. (예: 요일, 총 사용 시간, 가장 많이 사용한 앱)</li>
+                        </ul>
+                    </li>
+                    <li class="activity-item">
+                        <strong>데이터 그림으로 그리기 (시각화) (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>개념 설명</strong>: 데이터 시각화의 중요성 (빠른 이해, 패턴 발견) 및 다양한 차트 종류 (막대그래프, 원그래프, 꺾은선그래프) 소개. 각 차트가 어떤 데이터에 적합한지 예시로 설명.</li>
+                            <li><strong>실습</strong>: 엑셀/구글 스프레드시트의 차트 기능을 활용하여 자신의 스마트폰 사용 시간 데이터를 막대그래프나 원그래프로 만들어보기. (예: 요일별 사용 시간 막대그래프, 앱별 사용 시간 원그래프)</li>
+                        </ul>
+                    </li>
+                    <li class="activity-item">
+                        <strong>그림 속에서 의미 찾기 (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>발표</strong>: 학생들이 만든 차트를 발표하고, 차트를 통해 어떤 새로운 사실을 알게 되었는지 이야기 나누기. (예: "나는 주말에 스마트폰을 더 많이 쓰는구나!", "유튜브를 압도적으로 많이 보네!")</li>
+                            <li><strong>토론</strong>: 시각화된 데이터를 보고 개선할 점이나 궁금한 점 등을 자유롭게 토론.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">🏠</span> 과제</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    자신이 만든 스마트폰 사용 시간 데이터를 바탕으로 '나의 스마트폰 사용 습관 보고서'를 한 페이지로 작성해오기. (차트 포함)
+                </p>
+            </div>
+        </section>
+
+        <!-- 3차시: 데이터, 똑똑하게 써먹자! -->
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-indigo-600 mb-4 section-title">3차시: 데이터, 똑똑하게 써먹자! (45분)</h2>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">🚀</span> 학습 목표</h3>
+                <ul class="list-disc list-inside ml-4 text-gray-600 leading-relaxed">
+                    <li>데이터 분석 결과를 <strong>해석</strong>하고 <strong>결론</strong>을 도출할 수 있다.</li>
+                    <li>데이터 분석 결과를 바탕으로 <strong>합리적인 의사결정</strong>을 할 수 있다.</li>
+                    <li>데이터 분석의 <strong>한계점</strong>과 <strong>정보 윤리</strong>의 중요성을 이해한다.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">💡</span> 파인만 기법으로 미리 보기</h3>
+                <div class="feynman-preview">
+                    <p>"이제 우리가 데이터를 모으고, 예쁘게 정리해서 그림까지 그렸지? 그럼 이제 이 그림을 보고 무슨 이야기를 할 수 있을지 생각해볼 차례야. 마치 탐정이 단서를 다 모아서 범인이 누구인지 알아내는 것처럼 말이야. 그리고 우리가 얻은 이 중요한 정보를 가지고 어떻게 하면 더 멋진 결정을 내릴 수 있을지 고민해보는 거야! 그런데 조심해야 할 점도 있어. 데이터가 항상 모든 걸 알려주는 건 아니거든. 그리고 남의 데이터를 몰래 보거나 나쁜 데 쓰면 절대 안 되겠지?"</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-700 mb-2"><span class="icon">📝</span> 수업 활동</h3>
+                <ol class="list-decimal list-inside ml-4 text-gray-600 leading-relaxed">
+                    <li class="activity-item">
+                        <strong>"나의 스마트폰 사용 습관" 발표 및 토론 (20분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>발표</strong>: 지난 시간 과제였던 '나의 스마트폰 사용 습관 보고서'를 발표하고, 각자의 데이터 분석 결과와 해석을 공유.</li>
+                            <li><strong>의사결정</strong>: "이 데이터를 바탕으로 나의 스마트폰 사용 습관을 어떻게 개선할 수 있을까?" 토론 (예: 특정 요일에 사용 시간을 줄이자, 특정 앱 사용을 자제하자).</li>
+                        </ul>
+                    </li>
+                    <li class="activity-item">
+                        <strong>데이터 분석의 한계와 정보 윤리 (15분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>한계점</strong>: 데이터가 모든 것을 말해주지 않는다는 점 (예: 스마트폰 사용 시간이 길다고 무조건 나쁜 것은 아니다). 잘못된 데이터나 편향된 데이터의 문제점 설명.</li>
+                            <li><strong>정보 윤리</strong>: 개인 정보 보호, 데이터 오용 금지 등 데이터 분석 시 지켜야 할 윤리적 책임 강조. (예: "친구의 스마트폰 사용 기록을 몰래 본다면 어떨까?")</li>
+                            <li><strong>사례 토론</strong>: 데이터 오용 사례 (예: 개인 정보 유출, 조작된 데이터로 인한 피해)를 제시하고 학생들이 자유롭게 의견을 나누도록 유도.</li>
+                        </ul>
+                    </li>
+                    <li class="activity-item">
+                        <strong>우리 주변의 데이터 분석 기획 (10분)</strong>
+                        <ul class="list-disc list-inside ml-4 text-sm text-gray-500">
+                            <li><strong>그룹 토의</strong>: 모둠별로 "우리 학교/우리 반의 어떤 문제를 데이터로 분석하면 해결할 수 있을까?" 주제를 정하고 간단한 데이터 분석 프로젝트를 기획해보는 시간. (예: 급식 잔반 문제, 학교 내 쓰레기 문제, 친구들의 스트레스 지수 등)</li>
+                            <li><strong>발표</strong>: 각 모둠에서 기획한 프로젝트 간략하게 발표.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            <p>이 수업을 통해 학생들이 데이터가 어렵고 복잡한 것이 아니라, 우리 주변에 항상 존재하며 현명한 의사결정을 돕는 강력한 도구라는 것을 깨닫기를 바랍니다. 궁금한 점이 있다면 언제든지 저에게 질문해주세요!</p>
+        </footer>
+    </div>
+
+    <script>
+        // 여기에 필요한 JavaScript 코드를 추가할 수 있습니다.
+        // 예를 들어, 각 섹션을 접고 펴는 토글 기능 등을 구현할 수 있습니다.
+        // 현재는 정적인 내용이므로 특별한 JavaScript는 없습니다.
+        console.log("데이터 분석 실습 수업 지도안 웹페이지가 로드되었습니다.");
+    </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
